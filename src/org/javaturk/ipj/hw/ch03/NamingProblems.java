@@ -3,14 +3,6 @@ package org.javaturk.ipj.hw.ch03;
 public class NamingProblems {
     String first_name;
 
-    int f(int x, int y) {
-        int z = 1;
-        for (int i = 0; i < y; i++) {
-            z = z * x;
-        }
-        return z;
-    }
-
     public static void main(String[] args) {
         NamingProblems naming_errors = new NamingProblems();
         int base_var = 2;
@@ -20,5 +12,13 @@ public class NamingProblems {
         System.out.println(base_var + " ^ " + exp_var + " is " + base_var_of_pow_exp_var);
 
 //		int _ = 10;
+    }
+
+    int f(int x, int y) {
+        int z = 1;
+        for (int i = 0; i < y; i++) {
+            z = z * x;
+        }
+        return z;
     }
 }

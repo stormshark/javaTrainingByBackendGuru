@@ -12,11 +12,11 @@ package org.javaturk.ipj.ch10;
 public class BreakAndContinueWithLabel {
 
     public static void main(String[] args) {
-        int[][] array = { {32, 87, 3, 589, 7, 912, 617},
-                          {12, 1076, 2000, 12, 3},
-                          {622, 127, 12, 12}};
+        int[][] array = {{32, 87, 3, 589, 7, 912, 617},
+                {12, 1076, 2000, 12, 3},
+                {622, 127, 12, 12}};
 
-		int searchFor = 12;
+        int searchFor = 12;
 
         boolean foundIt = false;
 

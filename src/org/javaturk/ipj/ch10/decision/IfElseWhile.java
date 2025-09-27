@@ -8,8 +8,7 @@ public class IfElseWhile {
 
         if (false) {
             System.out.println("Selam");
-        }
-        else if(i > 0){
+        } else if (i > 0) {
             System.out.println(i);
             i--;
         }
@@ -20,8 +19,7 @@ public class IfElseWhile {
 
         if (false) {
             System.out.println("Selam");
-        }
-        else while(i > 0){
+        } else while (i > 0) {
             System.out.println(i);
             i--;
         }
@@ -32,8 +30,7 @@ public class IfElseWhile {
 
         if (false) {
             System.out.println("Selam");
-        }
-        else for(; i > 0; i--){
+        } else for (; i > 0; i--) {
             System.out.println(i);
         }
 

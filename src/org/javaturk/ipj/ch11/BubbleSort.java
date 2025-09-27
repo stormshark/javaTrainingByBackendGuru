@@ -10,7 +10,7 @@ public class BubbleSort {
         print(array);
     }
 
-    public static void sort(int[] array){
+    public static void sort(int[] array) {
         int length = array.length;
         for (int i = 0; i < length - 1; i++) {
             for (int j = 0; j < length - i - 1; j++) {
@@ -24,17 +24,17 @@ public class BubbleSort {
         }
     }
 
-    public static int[] createArray(int length){
+    public static int[] createArray(int length) {
         Random random = new Random();
         int[] array = new int[length];
-        for(int i = 0; i < length; i++)
+        for (int i = 0; i < length; i++)
             array[i] = random.nextInt(1_000);
         return array;
     }
 
-    public static void print(int[] array){
+    public static void print(int[] array) {
         System.out.println("\nPrinting array:");
-        for(int i : array)
+        for (int i : array)
             System.out.print(i + " ");
         System.out.println();
     }

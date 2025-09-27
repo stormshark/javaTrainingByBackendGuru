@@ -4,25 +4,25 @@ package org.javaturk.ipj.game.numberGuessing.gemini;
  * Gemini 2.5 Pro 12062025
  * A number guessing game where the computer tries to guess a 4-digit number
  * held by the player.
- *
+ * <p>
  * ### How the Code Works
  * This program is a great example for teaching several fundamental Java concepts:
  * 1. **`main` Method**: This is the entry point of the application. The game loop runs here, controlling the flow from start to finish.
  * 2. **`Scanner` Class**: It's used to read the player's input (`+` and `-` counts) from the console, making the game interactive.
  * 3. **Arrays (`int[]`)**: As requested, the code uses a basic integer array to store the list of all possible numbers. With each guess, this array is filtered and replaced by a new, smaller array.
  * 4. **Methods**: The logic is broken down into several helper methods, which is a core principle of clean code:
- *     - `generateInitialCandidates()`: This method prepares for the game by creating an array of every possible valid 4-digit number.
- *     - `isValidNumber()`: A simple but important method that checks if a number follows the "no repeating digits" rule.
- *     - `filterCandidates()`: This is the brain of the computer's strategy. It removes numbers from the `possibleNumbers` array that don't match the feedback given by the player.
- *     - `evaluateGuess()`: This method allows the computer to "think." It compares its guess against a potential answer to see if the feedback (`+` and `-`) would match what the player provided.
- *     - `toDigits()`: A small utility function that makes it easier to work with the individual digits of a number.
- *
+ * - `generateInitialCandidates()`: This method prepares for the game by creating an array of every possible valid 4-digit number.
+ * - `isValidNumber()`: A simple but important method that checks if a number follows the "no repeating digits" rule.
+ * - `filterCandidates()`: This is the brain of the computer's strategy. It removes numbers from the `possibleNumbers` array that don't match the feedback given by the player.
+ * - `evaluateGuess()`: This method allows the computer to "think." It compares its guess against a potential answer to see if the feedback (`+` and `-`) would match what the player provided.
+ * - `toDigits()`: A small utility function that makes it easier to work with the individual digits of a number.
+ * <p>
  * ### How to Run the Game
  * 1. Save the code in a file named . `NumberGuessingGame.java`
  * 2. Open a terminal or command prompt.
  * 3. Compile the code using the Java compiler: `javac NumberGuessingGame.java`
  * 4. Run the compiled program: `java NumberGuessingGame`
- *
+ * <p>
  * The game will start, and you can begin playing by following the on-screen instructions.
  * I hope this code is perfect for your training session. Let me know if you have any other questions
  */

@@ -2,7 +2,7 @@ package org.javaturk.ipj.ch10.decision;
 
 import java.util.Scanner;
 
- class YieldContextualKeyword { //  class yield
+class YieldContextualKeyword { //  class yield
 
     public static void main(String[] args) {
         int yield = 5;   // No problem with using yield as a variable identifier
@@ -25,18 +25,28 @@ import java.util.Scanner;
 
         System.out.print("Number of letters: ");
         System.out.println(switch (day) {
-            case 1: yield YieldContextualKeyword.yield("monday"); // Remove "YieldContextualKeyword" and see its effect! IntelliJ may now notice the problem until it compiles it!
-            case 2: yield YieldContextualKeyword.yield("tuesday");
-            case 3: yield YieldContextualKeyword.yield("wednesday");
-            case 4: yield YieldContextualKeyword.yield("thursday");
-            case 5: yield YieldContextualKeyword.yield("friday");
-            case 6: yield YieldContextualKeyword.yield("saturday");
-            case 7: yield YieldContextualKeyword.yield("sunday");
-            default: {int yield = -1; yield yield;}
+            case 1:
+                yield YieldContextualKeyword.yield("monday"); // Remove "YieldContextualKeyword" and see its effect! IntelliJ may now notice the problem until it compiles it!
+            case 2:
+                yield YieldContextualKeyword.yield("tuesday");
+            case 3:
+                yield YieldContextualKeyword.yield("wednesday");
+            case 4:
+                yield YieldContextualKeyword.yield("thursday");
+            case 5:
+                yield YieldContextualKeyword.yield("friday");
+            case 6:
+                yield YieldContextualKeyword.yield("saturday");
+            case 7:
+                yield YieldContextualKeyword.yield("sunday");
+            default: {
+                int yield = -1;
+                yield yield;
+            }
         });
     }
 
-    static int yield(String day){
+    static int yield(String day) {
         return day.length();
     }
 

@@ -25,25 +25,26 @@ public class Statements {
         System.out.println("Last two chars: " + lastTwoChars2);
 
         // Many statements are on one line: Not good! Confusing!
-        int j = 4; j++; System.out.println("j: " + j);
+        int j = 4;
+        j++;
+        System.out.println("j: " + j);
 
         // One statement lies on many lines: Not good and unusual! Confusing!
         int
                 k
                 =
-                14
-                ;
+                14;
 
         System
                 .
                 out
-                .
+                        .
                 println("k: " + k)
-                ;
+        ;
 
     }
 
-    static String getString(){
+    static String getString() {
         return "I love Java :)";
     }
 }

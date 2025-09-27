@@ -15,7 +15,7 @@ public class ForDemo {
 //        simpleFor();
 //        multiplicationTable();
 //        fibonacciNumbers(40);
-		others();
+        others();
     }
 
     static void simpleFor() {

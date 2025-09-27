@@ -5,13 +5,13 @@ public class Doctor {
     String name;
     String field;
 
-    public Prescription inspect(Patient patient){
+    public Prescription inspect(Patient patient) {
         Prescription prescription = null;
         //...
         return prescription;
     }
 
-    public void operate(Patient patient){
+    public void operate(Patient patient) {
         //...
     }
 }

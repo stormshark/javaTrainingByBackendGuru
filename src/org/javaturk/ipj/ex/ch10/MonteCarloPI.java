@@ -9,11 +9,11 @@ public class MonteCarloPI {
         int n = sc.nextInt();
         int r = 0;
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             double x = Math.random();
             double y = Math.random();
             double distance = x * x + y * y;
-            if(distance <= 1)
+            if (distance <= 1)
                 r++;
         }
 

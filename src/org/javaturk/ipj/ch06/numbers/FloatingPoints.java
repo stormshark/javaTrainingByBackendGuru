@@ -11,7 +11,7 @@ public class FloatingPoints {
         System.out.println("floatPi: " + floatPi);
         System.out.printf("floatPi: %2.40f\n", floatPi);
 
-        doublePi = 22.0/7;
+        doublePi = 22.0 / 7;
         System.out.println("doublePi: " + doublePi);
         System.out.printf("doublePi: %2.40f\n", doublePi);
     }

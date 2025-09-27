@@ -2,11 +2,11 @@ package org.javaturk.ipj.ch10.loop;
 
 public class HaltingProblem1 {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		while (true)
-			System.out.println("Selam");
-		
+        while (true)
+            System.out.println("Selam");
+
 //		double d = Math.random();
 ////
 //		while (d < 0.5)
@@ -16,19 +16,19 @@ public class HaltingProblem1 {
 //			System.out.println(d);
 
 //		solveHaltingProblem();
-	}
+    }
 
-	public static void solveHaltingProblem() {
-		double d = Math.random();
+    public static void solveHaltingProblem() {
+        double d = Math.random();
 
 //		while (d < 0.5) {
 //			d = Math.random();
 //			System.out.println(d);
 //		}
 
-		for (; d < 0.5;) {
-			d = Math.random();
-			System.out.println(d);
-		}
-	}
+        for (; d < 0.5; ) {
+            d = Math.random();
+            System.out.println(d);
+        }
+    }
 }

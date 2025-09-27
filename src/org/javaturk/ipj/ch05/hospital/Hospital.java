@@ -2,7 +2,7 @@ package org.javaturk.ipj.ch05.hospital;
 
 import java.util.Date;
 
-public class  Hospital {
+public class Hospital {
     String name;
     Doctor[] doctors;
     Patient[] patients;

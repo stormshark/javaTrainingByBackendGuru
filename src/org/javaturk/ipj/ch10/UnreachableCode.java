@@ -73,14 +73,14 @@ public class UnreachableCode {
 ////			if (true)
 ////				break;
 ////			System.out.println("Bir selam daha.");   // Dead code not unreachable code
-////		}
+////        }
 //
 ////		 try {
-////		
-////		 } catch (IOException e) { // Unreachable code. Try to catch Exception
+////
+////         } catch (IOException e) { // Unreachable code. Try to catch Exception
 ////		 // or RuntimeException and see what happens
-////		
-////		 }
+////
+////         }
 //
 //		// return;
 //		// System.out.println("Son after return"); // Unreachable code!

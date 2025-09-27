@@ -1,6 +1,6 @@
 package org.javaturk.ipj.ch02.selam;
 
- class SelamTest {
+class SelamTest {
     public static void main(String[] args) {
         Selam object = new Selam();
         String answer = object.selamSöyle("Mahmut");
