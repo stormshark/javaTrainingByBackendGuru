@@ -1,5 +1,7 @@
 //First remove comments below
-/* Remove this line
+///* Remove this line
+
+
 
 void calculateSumUsingFormula(int n) {
     int sum = n * (n + 1) / 2;
@@ -16,4 +18,10 @@ void calculateSumUsingLoop(int n) {
     System.out.println("Computed step by step!");
 }
 
-Remove this line */
+void main() {
+    int n = 100;
+    calculateSumUsingFormula(n);
+    calculateSumUsingLoop(n);
+}
+
+//Remove this line */
