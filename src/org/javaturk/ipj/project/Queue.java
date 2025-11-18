@@ -1,5 +1,7 @@
 package org.javaturk.ipj.project;
 
+import java.util.Arrays;
+
 public class Queue {
     // This is a file that depicts what a queue class should look like in Java.
     // It includes method signatures and comments describing their functionality.
@@ -15,42 +17,77 @@ public class Queue {
 
     // Insert element at the bottom
     public boolean enqueue(String newElement) {
-        return true;
+        // check empty cell and then fill it
+        for (int i = 0; i < MAX_QUEUE_SIZE; i++) {
+            if (queue[i] == null) {
+                queue[i] = newElement;
+                return true;
+            }
+        }
+        return false;
     }
 
     // Remove element from the top
     public String dequeue() {
-        return "OK";
+
+        for (int i = 0; i < MAX_QUEUE_SIZE; i++) {
+            if (queue[i] != null) {
+                queue[i] = null;
+                return "dequeued";
+            }
+        }
+        return "could not dequeued";
     }
 
     // Remove all elements from queue
     public void clear() {
+        Arrays.fill(queue, null);
     }
 
 // Queue status operations
 
     // Is queue empty?
     public boolean isEmpty() {
+        for (int i = 0; i < MAX_QUEUE_SIZE; i++) {
+            if (queue[i] != null) {
+                return false;
+            }
+        }
         return true;
     }
 
     // Is queue full?
     public boolean isFull() {
-        return true;
+        return queue[0] != null && queue[MAX_QUEUE_SIZE] != null;
     }
 
     // How many elements in queue?
     public int size() {
-        return 10;
+        int counter = 0;
+        for (int i = 0; i < MAX_QUEUE_SIZE; i++) {
+            if (queue[i] != null) {
+                counter = counter + 1;
+            }
+        }
+        return counter;
     }
 
     // Capacity of queue?
     public int getCapacity() {
-        return 10;
+        int counter = 0;
+        for (int i = 0; i < MAX_QUEUE_SIZE; i++) {
+            if (queue[i] != null) {
+                counter = counter + 1;
+            }
+        }
+        return MAX_QUEUE_SIZE - counter;
     }
 
     // Outputs the elements in the queue.
     public void showElements() {
+        for (int i = 0; i < MAX_QUEUE_SIZE; i++) {
+            IO.println(i + 1 + ". inci element " + queue[i]);
+        }
     }
 
     void main() {
